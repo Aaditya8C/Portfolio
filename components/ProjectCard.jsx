@@ -14,18 +14,18 @@ const ProjectCard = ({ data }) => {
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
-      <div className="grid sm:max-w-[50%] gap-8 md:group-odd:ml-[22rem] lg:group-odd:ml-[30rem]">
-        <p className="font-semibold text-xl md:text-3xl text-left">
+      <div className="grid sm:max-w-[50%] gap-8 md:group-odd:ml-[22rem] ">
+        <p className="font-semibold text-xl md:text-2xl text-left">
           {data.title}
         </p>
-        <p className="text-xl text-left">{data.desc}</p>
+        <p className="text-lg text-left">{data.desc}</p>
 
         <div className="flex flex-wrap gap-4">
           {data.tech.map((item, index) => {
             return (
               <p
                 key={index}
-                className="bg-gray-600 text-white py-3 px-5 rounded-full shrink-0"
+                className="bg-gray-600 text-white py-1 px-3 text-sm rounded-full shrink-0"
               >
                 {item}
               </p>
@@ -46,7 +46,7 @@ const ProjectCard = ({ data }) => {
       </div> */}
       <div
         className="hidden md:block shadow-2xl 
-        absolute top-20 -right-8 bottom-28 group-odd:right-[initial] group-odd:-left-8 
+        absolute top-16 bottom-10 -right-8 group-odd:right-[initial] group-odd:-left-8 
         group-hover:scale-105
         group-hover:-translate-x-3
         group-hover:translate-y-3 
@@ -62,8 +62,7 @@ const ProjectCard = ({ data }) => {
           height={2000}
           alt="project"
           quality={100}
-          className="rounded-t-xl w-[20rem] lg:w-[25rem] h-full
-          
+          className="rounded-t-xl w-[20rem] lg:w-[20rem] h-full
           "
         />
       </div>

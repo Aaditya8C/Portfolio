@@ -18,6 +18,7 @@ import java from '../public/Assets/java.svg';
 import python from '../public/Assets/python.svg';
 import laravel from '../public/Assets/laravel.svg';
 import github from '../public/Assets/github.svg';
+import medi from '../public/Assets/medisage.png';
 
 
 // link for free svg icons: https://iconduck.com/icons/89383/github
@@ -42,4 +43,5 @@ export const JavaLogo = java;
 export const PythonLogo = python;
 export const LaravelLogo = laravel;
 export const GithubLogo = github;
+export const Medisage = medi;
 
