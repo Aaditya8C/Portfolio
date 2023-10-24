@@ -3,6 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Link from "next/link";
+import { FaShareFromSquare } from "react-icons/fa6";
+import Button from "./Button";
 
 const ProjectCard = ({ data }) => {
   useEffect(() => {
@@ -10,14 +12,12 @@ const ProjectCard = ({ data }) => {
   }, []);
 
   return (
-    <Link
-      className="rounded-3xl bg-gray-100 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse hover:bg-gray-200 transition duration-200 md:cursor-pointer"
+    <div
+      className="rounded-3xl bg-gray-50 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse hover:bg-gray-100 transition duration-200"
       data-aos="zoom-in-up"
       data-aos-duration="1500"
-      href={data.link}
-      target="_blank"
     >
-      <div className="grid lg:max-w-[50%] place-content-center place-items-center gap-8 lg:group-odd:ml-[22rem] ">
+      <div className="grid lg:max-w-[50%] place-content-center place-items-center gap-8 lg:group-odd:ml-[20rem] ">
         <p className="font-semibold text-xl lg:text-2xl text-left">
           {data.title}
         </p>
@@ -44,6 +44,18 @@ const ProjectCard = ({ data }) => {
             );
           })}
         </div>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Link href={data.liveLink} target="_blank">
+          <Button btnText="Live Demo" invert className="text-gray-500  text-sm">
+            <FaShareFromSquare className="h-4 w-4" />
+          </Button>
+          </Link>
+          <Link href={data.gitLink} target="_blank">
+          <Button btnText="View Github" invert className="text-gray-500 text-sm">
+            <FaShareFromSquare className="h-4 w-4" />
+          </Button>
+          </Link>
+        </div>
       </div>
 
       <div
@@ -68,7 +80,7 @@ const ProjectCard = ({ data }) => {
           "
         />
       </div>
-    </Link>
+    </div>
   );
 };
 

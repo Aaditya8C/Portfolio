@@ -48,21 +48,24 @@ export default function Home() {
         "Apollo Client",
         "Github OAuth Apps",
       ],
-      link:"https://smart-chat-rho.vercel.app/"
+      liveLink:"https://smart-chat-rho.vercel.app/",
+      gitLink:"https://github.com/Aaditya8C/SmartChat"
     },
     {
       title: "TravelKing",
       desc: "Currently a static webpage,TravelKing is the web platform dedicated to the famous tourist spot Alibag. Using this platform tourists can book explore various activities & book stays in Alibag.",
       logo: TkFrontEnd,
       tech: ["Next Js", "Tailwind CSS", "Framer Motion","AOS"],
-      link:"https://travel-king.vercel.app/"
+      liveLink:"https://travel-king.vercel.app/",
+      gitLink:"https://github.com/Aaditya8C/TravelKing"
     },
     {
       title: "TravelKing Admin",
       desc: "It is the admin panel for TravelKing platform that allows the lodge owners to register their lodge & update,track booking status for individual lodge/hotel.",
       logo: TkAdmin,
       tech: ["Next Js", "Tailwind CSS", "Node Js", "Express Js", "MongoDB"],
-      link:"https://travel-king-admin.vercel.app/"
+      liveLink:"https://travel-king-admin.vercel.app/",
+      gitLink:"https://github.com/Aaditya8C/TravelKing-Admin"
     },
   ];
 
@@ -129,7 +132,7 @@ export default function Home() {
     {
       org: "MediSage E-learning Pvt. Ltd.",
       position: "Full Stack Web Developer",
-      desc: "I've worked as a full stack web developer intern at this organis=zation. Organization is having their own product so I've worked on development side of that product. Worked on live projects such as creating new pages for the website, fixing bugs in the live website,creating API's & much more. I've worked on technologies such as Next js, React js, Tailwind CSS, Laravel & MySQL etc.",
+      desc: "I've worked as a full stack web developer intern at this organization. Organization is having their own product so I've worked on development side of that product. Worked on live projects such as creating new pages for the website, fixing bugs in the live website,creating API's & much more. I've worked on technologies such as Next js, React js, Tailwind CSS, Laravel & MySQL etc.",
       options: defaultOptions,
       // tech: ["Next Js", "Tailwind CSS",],
     },
