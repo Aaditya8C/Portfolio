@@ -69,7 +69,7 @@ const Navbar = () => {
         <div
           className={classNames(
             " bg-gray-50 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-lg px-6 py-2 transition-all duration-300",
-            isShow ? "translate-y-0" : "-translate-y-80 md:translate-y-0"
+            isShow ? "translate-y-0" : "-translate-y-80  md:translate-y-0"
           )}
         >
           <ul className="flex gap-6 md:gap-10 flex-wrap justify-center">

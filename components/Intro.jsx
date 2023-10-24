@@ -12,10 +12,21 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { MyImage3 } from "./imageConstant";
 import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 // import {Resume} from "../public/Assets/resume.pdf";
+import useDownloader from "react-use-downloader";
 
 const Intro = () => {
   const { setActiveSection } = useActiveSectionContext();
   const { ref, inView } = useInView();
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader();
+  // const [fileUrl,setFileUrl] = "/public/resume.pdf";
+  const fileUrl = "/resume.pdf";
+  const fileName = "aaditya-resume.pdf";
+
+  const downloadResume = () => {
+    console.log(fileUrl);
+    download(fileUrl, fileName);
+  };
 
   useEffect(() => {
     if (inView) setActiveSection("Home");
@@ -49,8 +60,8 @@ const Intro = () => {
         className="grid place-items-center"
       >
         <p className="text-xl md:text-2xl line-clamp-6">
-          <b>Hello, I&apos;m Aaditya.</b> Im a <b>full-stack developer</b> based in
-          Mumbai. I enjoy building sites & apps.
+          <b>Hello, I&apos;m Aaditya.</b> Im a <b>full-stack developer</b> based
+          in Mumbai. I enjoy building sites & apps.
         </p>
         <div className="flex flex-col md:flex-row gap-6 py-10">
           <Link href={composeUrl} target="_blank">
@@ -58,11 +69,9 @@ const Intro = () => {
               <FiArrowRight className="h-5 w-5" />
             </Button>
           </Link>
-          <Link download={MyImage3} href={MyImage3}>
-            <Button btnText="Download CV" invert>
-              <HiDownload className="h-5 w-5" />
-            </Button>
-          </Link>
+          <Button btnText="Download CV" invert clickEvent={downloadResume}>
+            <HiDownload className="h-5 w-5" />
+          </Button>
           <Link href={linkedInProfile}>
             <Button invert>
               <FaLinkedin className="h-7 w-5" />
