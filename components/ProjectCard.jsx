@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectCard = ({ data }) => {
   useEffect(() => {
@@ -9,10 +10,12 @@ const ProjectCard = ({ data }) => {
   }, []);
 
   return (
-    <div
-      className="rounded-3xl bg-gray-100 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse hover:bg-gray-200 transition duration-200"
+    <Link
+      className="rounded-3xl bg-gray-100 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse hover:bg-gray-200 transition duration-200 md:cursor-pointer"
       data-aos="zoom-in-up"
       data-aos-duration="1500"
+      href={data.link}
+      target="_blank"
     >
       <div className="grid lg:max-w-[50%] place-content-center place-items-center gap-8 lg:group-odd:ml-[22rem] ">
         <p className="font-semibold text-xl lg:text-2xl text-left">
@@ -65,7 +68,7 @@ const ProjectCard = ({ data }) => {
           "
         />
       </div>
-    </div>
+    </Link>
   );
 };
 

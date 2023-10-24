@@ -33,7 +33,7 @@ const Intro = () => {
   }, [inView]);
   return (
     <div className="grid place-items-center gap-6" ref={ref} id="Home">
-      <motion.div
+      {/* <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         className="-z-10"
@@ -53,14 +53,14 @@ const Intro = () => {
         >
           👋
         </motion.span>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="grid place-items-center"
       >
         <p className="text-xl md:text-2xl line-clamp-6">
-          <b>Hello, I&apos;m Aaditya.</b> Im a <b>full-stack developer</b> based
+          <b>Hello, I&apos;m Aaditya.</b> I&apos;m a <b>full-stack developer</b> based
           in Mumbai. I enjoy building sites & apps.
         </p>
         <div className="flex flex-wrap justify-center  md:flex-row gap-6 py-10">

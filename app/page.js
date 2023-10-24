@@ -48,18 +48,21 @@ export default function Home() {
         "Apollo Client",
         "Github OAuth Apps",
       ],
+      link:"https://smart-chat-rho.vercel.app/"
     },
     {
       title: "TravelKing",
       desc: "Currently a static webpage,TravelKing is the web platform dedicated to the famous tourist spot Alibag. Using this platform tourists can book explore various activities & book stays in Alibag.",
       logo: TkFrontEnd,
       tech: ["Next Js", "Tailwind CSS", "Framer Motion","AOS"],
+      link:"https://travel-king.vercel.app/"
     },
     {
       title: "TravelKing Admin",
       desc: "It is the admin panel for TravelKing platform that allows the lodge owners to register their lodge & update,track booking status for individual lodge/hotel.",
       logo: TkAdmin,
       tech: ["Next Js", "Tailwind CSS", "Node Js", "Express Js", "MongoDB"],
+      link:"https://travel-king-admin.vercel.app/"
     },
   ];
 
