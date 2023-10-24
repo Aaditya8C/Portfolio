@@ -46,7 +46,7 @@ const ProjectCard = ({ data }) => {
       </div> */}
       <div
         className="hidden md:block shadow-2xl 
-        absolute top-16 bottom-10 -right-8 group-odd:right-[initial] group-odd:-left-8 
+        absolute top-16 bottom-16 -right-8 group-odd:right-[initial] group-odd:-left-8 
         group-hover:scale-105
         group-hover:-translate-x-3
         group-hover:translate-y-3 

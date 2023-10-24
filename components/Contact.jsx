@@ -18,11 +18,11 @@ const Contact = () => {
   }, [inView]);
   return (
     <div
-      className="w-fit md:rounded-t-full bg-gray-100 px-20 md:px-40 py-8"
+      className="w-fit md:rounded-t-full bg-gray-100 px-20 md:px-40 py-6"
       ref={ref}
       id="Contact"
     >
-      <p className="text-center">Seeking creative partnerships. Let&apos; bring ideas to life!</p>
+      <p className="text-center text-lg">Seeking creative partnerships. Let&apos; bring ideas to life!</p>
       <div className="flex md:flex-row flex-wrap justify-center items-center mt-4 gap-6">
         <Link href={composeUrl} target="_blank">
           <Button btnText="Contact me here">

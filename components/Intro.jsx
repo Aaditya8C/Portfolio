@@ -49,7 +49,7 @@ const Intro = () => {
         className="grid place-items-center"
       >
         <p className="text-xl md:text-2xl line-clamp-6">
-          <b>Hello, Im Aaditya.</b> Im a <b>full-stack developer</b> based in
+          <b>Hello, I&apos;m Aaditya.</b> Im a <b>full-stack developer</b> based in
           Mumbai. I enjoy building sites & apps.
         </p>
         <div className="flex flex-col md:flex-row gap-6 py-10">
@@ -58,7 +58,7 @@ const Intro = () => {
               <FiArrowRight className="h-5 w-5" />
             </Button>
           </Link>
-          <Link download={MyImage3} href="#">
+          <Link download={MyImage3} href={MyImage3}>
             <Button btnText="Download CV" invert>
               <HiDownload className="h-5 w-5" />
             </Button>

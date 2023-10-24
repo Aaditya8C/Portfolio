@@ -39,7 +39,7 @@ export default function Home() {
   const projectData = [
     {
       title: "SmartChat",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus iure,consectetur cum magni fugit praesentium unde nihil error eos recusandae.",
+      desc: "SmartChat is a web based chat application that allows users to authenticate using their Github credentials & chat with other random github users.",
       logo: SmartChat,
       tech: [
         "Next Js",
@@ -51,13 +51,13 @@ export default function Home() {
     },
     {
       title: "TravelKing",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus iure,consectetur cum magni fugit praesentium unde nihil error eos recusandae.",
+      desc: "Currently a static webpage,TravelKing is the web platform dedicated to the famous tourist spot Alibag. Using this platform tourists can book explore various activities & book stays in Alibag.",
       logo: TkFrontEnd,
-      tech: ["Next Js", "Tailwind CSS", "Framer Motion"],
+      tech: ["Next Js", "Tailwind CSS", "Framer Motion","AOS"],
     },
     {
       title: "TravelKing Admin",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus iure,consectetur cum magni fugit praesentium unde nihil error eos recusandae.",
+      desc: "It is the admin panel for TravelKing platform that allows the lodge owners to register their lodge & update,track booking status for individual lodge/hotel.",
       logo: TkAdmin,
       tech: ["Next Js", "Tailwind CSS", "Node Js", "Express Js", "MongoDB"],
     },

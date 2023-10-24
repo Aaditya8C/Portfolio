@@ -20,18 +20,9 @@ const About = () => {
       ref={ref}
     >
       <p className="font-semibold text-xl md:text-2xl">About Me</p>
-      <p className="text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis
-        tempora iste reiciendis dolore inventore vel est delectus aliquam dicta
-        quos dolores perferendis ut quam fugit aspernatur quaerat dolor,
-        consectetur deserunt sapiente velit deleniti maxime modi? Enim veritatis
-        ab cumque. Temporibus praesentium exercitationem harum molestias sed
-        aliquam nemo reprehenderit ab?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque
-        error inventore cupiditate adipisci, maxime obcaecati non quidem sed
-        rerum.
+      <p className="text-center text-lg">
+        I&apos;m a software enthusiast & love to build interactive websites & web apps.
+        Seeking a challenging career in the vast of tech and software and I&apos;m ready to work & explore new technologies.
       </p>
     </motion.div>
   );
