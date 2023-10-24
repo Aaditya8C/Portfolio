@@ -63,20 +63,20 @@ const Intro = () => {
           <b>Hello, I&apos;m Aaditya.</b> Im a <b>full-stack developer</b> based
           in Mumbai. I enjoy building sites & apps.
         </p>
-        <div className="flex flex-col md:flex-row gap-6 py-10">
+        <div className="flex flex-wrap justify-center  md:flex-row gap-6 py-10">
           <Link href={composeUrl} target="_blank">
             <Button btnText="Contact me here">
               <FiArrowRight className="h-5 w-5" />
             </Button>
           </Link>
-          <Button btnText="Download CV" invert clickEvent={downloadResume}>
-            <HiDownload className="h-5 w-5" />
-          </Button>
           <Link href={linkedInProfile}>
             <Button invert>
               <FaLinkedin className="h-7 w-5" />
             </Button>
           </Link>
+          <Button btnText="Download CV" invert clickEvent={downloadResume}>
+            <HiDownload className="h-5 w-5" />
+          </Button>
           <Link href={gitHubProfile}>
             <Button invert>
               <FaGithub className="h-7 w-5" />
