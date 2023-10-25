@@ -6,13 +6,13 @@ import Button from "./Button";
 import { FiArrowRight } from "react-icons/fi";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { MyImage3 } from "./imageConstant";
 import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 // import {Resume} from "../public/Assets/resume.pdf";
 import useDownloader from "react-use-downloader";
+import * as animationData from '../public/Assets/dev.json';
+import Lottie from "react-lottie";
 
 const Intro = () => {
   const { setActiveSection } = useActiveSectionContext();
@@ -31,29 +31,24 @@ const Intro = () => {
   useEffect(() => {
     if (inView) setActiveSection("Home");
   }, [inView]);
+
+  const defaultOptions = {
+    animationData: animationData,
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  }
   return (
     <div className="grid place-items-center gap-6" ref={ref} id="Home">
-      {/* <motion.div
+      <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         className="-z-10"
       >
-        <Image
-          src={MyImage3}
-          alt="My Image"
-          width={80}
-          height={80}
-          className="rounded-full relative border-violet-400 border-[3px]"
-        />
-        <motion.span
-          initial={{ scale: 0, opacity: 0, y: "-120%", x: "40%" }}
-          animate={{ scale: 1, opacity: 1, y: "-120%", x: "40%" }}
-          transition={{ duration: 0.5, delay: 0.1, type: "tween" }}
-          className="absolute text-2xl"
-        >
-          👋
-        </motion.span>
-      </motion.div> */}
+       <Lottie options={defaultOptions} width={300} height={300}/>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}

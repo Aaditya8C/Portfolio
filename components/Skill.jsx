@@ -25,10 +25,10 @@ const Skill = ({ data, index }) => {
       //   once:true // to perform animation only once
       // }}
       custom={index}
-      className="flex flex-col gap-4 p-4 flex-wrap items-center "
+      className="grid gap-4 place-content-center place-items-center "
     >
-      <Image src={data.logo} height={60} width={60} alt="my skills" className="shrink-0 grow" />
-      <div className="bg-white p-2 text-center border rounded-lg shadow-lg shrink-0">
+      <Image src={data.logo} height={60} width={60} alt="my skills" className="" />
+      <div className="bg-white p-2 text-center border rounded-lg shadow-lg">
         <p>{data.label}</p>
       </div>
     </motion.div>
