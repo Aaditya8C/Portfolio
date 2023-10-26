@@ -21,9 +21,9 @@ const Skill = ({ data, index }) => {
       variants={animationData}
       initial="initial"
       whileInView="animate"
-      // viewport={{
-      //   once:true // to perform animation only once
-      // }}
+      viewport={{
+        once:true // to perform animation only once
+      }}
       custom={index}
       className="grid gap-4 place-content-center place-items-center "
     >

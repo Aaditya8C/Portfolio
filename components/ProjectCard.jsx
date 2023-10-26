@@ -46,14 +46,22 @@ const ProjectCard = ({ data }) => {
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <Link href={data.liveLink} target="_blank">
-          <Button btnText="Live Demo" invert className="text-gray-500  text-sm">
-            <FaShareFromSquare className="h-4 w-4" />
-          </Button>
+            <Button
+              btnText="Live Demo"
+              invert
+              className="text-gray-500  text-sm"
+            >
+              <FaShareFromSquare className="h-4 w-4" />
+            </Button>
           </Link>
           <Link href={data.gitLink} target="_blank">
-          <Button btnText="View Github" invert className="text-gray-500 text-sm">
-            <FaShareFromSquare className="h-4 w-4" />
-          </Button>
+            <Button
+              btnText="View Github"
+              invert
+              className="text-gray-500 text-sm"
+            >
+              <FaShareFromSquare className="h-4 w-4" />
+            </Button>
           </Link>
         </div>
       </div>

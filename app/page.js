@@ -18,13 +18,6 @@ import {
   GithubLogo,
   Medisage,
 } from "@/components/imageConstant";
-import Button from "@/components/Button";
-import { FiArrowRight } from "react-icons/fi";
-import { HiDownload } from "react-icons/hi";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { composeUrl, gitHubProfile, linkedInProfile } from "@/components/linkConstant";
 import { NextLogo } from "@/components/imageConstant";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -140,7 +133,7 @@ export default function Home() {
 
   return (
     <div className="grid place-items-center lg:w-[80%] m-auto">
-      <div className="grid gap-10 py-20 px-6 lg:w-3/4 text-center">
+      <div className="grid gap-10 py-5 px-6 lg:w-3/4 text-center">
         {/* Intro */}
         <Intro/>
         <About />

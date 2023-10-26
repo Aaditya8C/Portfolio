@@ -13,7 +13,7 @@ const Work = ({ data }) => {
   }, [inView]);
   return (
     <div
-      className="py-10 md:px-20 grid gap-10 scroll-mt-24"
+      className="py-10 md:px-20 grid gap-10 md:scroll-mt-24"
       id="Experience"
       ref={ref}
     >
