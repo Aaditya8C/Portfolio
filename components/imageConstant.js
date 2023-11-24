@@ -1,5 +1,4 @@
-import MyImg1 from '../public/Assets/myImg1.jpg';
-import MyImg2 from '../public/Assets/myImg2.svg';
+
 import MyImg3 from '../public/Assets/myImg3.jpeg';
 import Proj1 from '../public/Assets/smartChat.png';
 import Proj2 from '../public/Assets/tkAdmin.png';
@@ -24,8 +23,6 @@ import medi from '../public/Assets/medisage.png';
 // link for free svg icons: https://iconduck.com/icons/89383/github
 
 
-export const MyImage1 = MyImg1;
-export const MyImage2 = MyImg2;
 export const MyImage3 = MyImg3
 export const SmartChat = Proj1;
 export const TkAdmin = Proj2;
