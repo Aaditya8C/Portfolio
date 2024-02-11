@@ -2,7 +2,12 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import Button from "./Button";
 import { FaLinkedin } from "react-icons/fa";
-import { composeUrl, instaProfile, linkedInProfile, xProfile } from "./linkConstant";
+import {
+  composeUrl,
+  instaProfile,
+  linkedInProfile,
+  xProfile,
+} from "./linkConstant";
 import { AiFillInstagram } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FiArrowRight } from "react-icons/fi";
@@ -18,11 +23,13 @@ const Contact = () => {
   }, [inView]);
   return (
     <div
-      className="w-fit md:rounded-t-full bg-gray-100 px-20 md:px-40 py-6"
+      className="w-fit md:rounded-t-full bg-orange-100 text-violet-950 px-20 md:px-40 py-6"
       ref={ref}
       id="Contact"
     >
-      <p className="text-center text-lg">Seeking creative partnerships. Let&apos; bring ideas to life!</p>
+      <p className="text-center text-lg">
+        Seeking creative partnerships. Let&apos; bring ideas to life!
+      </p>
       <div className="flex md:flex-row flex-wrap justify-center items-center mt-4 gap-6">
         <Link href={composeUrl} target="_blank">
           <Button btnText="Contact me here">

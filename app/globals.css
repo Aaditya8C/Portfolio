@@ -1,8 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 body{
   background: rgb(200,200,255);
   background: linear-gradient(90deg, rgb(255, 204, 181) 0%, rgb(246, 233, 213) 100%);
+} */
+
+/* body {
+  background-image: linear-gradient(to right, #b3acf6, #b288ff, #a0d5f8da);
+  background-size: 200% 100% 1%;
+  transition: background-position 0.5s;
+} */
+
+body {
+  background: linear-gradient(45deg, #bdb4ff, #9f6efb, #c4fcffda);
+  background-size: 400% 200%;
+  animation: gradientAnimation 10s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

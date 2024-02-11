@@ -11,7 +11,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 // import {Resume} from "../public/Assets/resume.pdf";
 import useDownloader from "react-use-downloader";
-import * as animationData from '../public/Assets/dev.json';
+import * as animationData from "../public/Assets/dev.json";
 import Lottie from "react-lottie";
 
 const Intro = () => {
@@ -39,7 +39,7 @@ const Intro = () => {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  }
+  };
   return (
     <div className="grid place-items-center gap-6" ref={ref} id="Home">
       <motion.div
@@ -47,16 +47,16 @@ const Intro = () => {
         animate={{ scale: 1, opacity: 1 }}
         className="-z-10"
       >
-       <Lottie options={defaultOptions} width={300} height={300}/>
+        <Lottie options={defaultOptions} width={300} height={300} />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="grid place-items-center"
+        className="grid place-items-center text-slate-200 "
       >
         <p className="text-xl md:text-2xl line-clamp-6">
-          <b>Hello, I&apos;m Aaditya.</b> I&apos;m a <b>full-stack developer</b> based
-          in Mumbai. I enjoy building sites & apps.
+          <b>Hello, I&apos;m Aaditya.</b> I&apos;m a <b>full-stack developer</b>{" "}
+          based in Mumbai. I enjoy building sites & apps.
         </p>
         <div className="flex flex-wrap justify-center  md:flex-row gap-6 py-10">
           <Link href={composeUrl} target="_blank">

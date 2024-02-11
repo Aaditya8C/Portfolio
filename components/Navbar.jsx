@@ -68,18 +68,20 @@ const Navbar = () => {
       >
         <div
           className={classNames(
-            " bg-gray-50 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-lg px-6 py-2 transition-all duration-300",
+            " bg-violet-950 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-xl px-6 py-2 transition-all duration-300",
             isShow ? "translate-y-0" : "-translate-y-80  md:translate-y-0"
           )}
         >
-          <ul className="flex gap-6 md:gap-10 flex-wrap justify-center">
+          <ul className="flex gap-6 md:gap-10 flex-wrap justify-center items-center ">
             {navbarItems.map((item, index) => {
               return (
                 <motion.li
                   key={index}
                   className={classNames(
                     "grow md:cursor-pointer transition-all duration-300 p-3 relative",
-                    activeSection == item.name ? "text-black" : "text-gray-600 "
+                    activeSection == item.name
+                      ? "text-black"
+                      : "text-orange-200"
                   )}
                   onClick={() => setActiveSection(item.name)}
                 >
@@ -91,14 +93,17 @@ const Navbar = () => {
                         stiffness: 300,
                         damping: 30,
                       }}
-                      className="absolute -z-10 inset-0 bg-gray-200 rounded-tl-2xl rounded-br-2xl"
+                      className="absolute -z-10 inset-0 bg-orange-200  rounded-full"
                     ></motion.span>
                   )}
                   <Link href={item.link}>{item.name}</Link>
                 </motion.li>
               );
             })}
-            <AiOutlineCloseCircle className="w-8 h-8 text-gray-500 md:hidden" onClick={() => setIsShow(false)}/>
+            <AiOutlineCloseCircle
+              className="w-8 h-8 text-gray-500 md:hidden"
+              onClick={() => setIsShow(false)}
+            />
           </ul>
         </div>
       </motion.div>

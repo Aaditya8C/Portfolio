@@ -17,6 +17,7 @@ import {
   PythonLogo,
   GithubLogo,
   Medisage,
+  StudyNexLogo,
 } from "@/components/imageConstant";
 import { NextLogo } from "@/components/imageConstant";
 import About from "@/components/About";
@@ -28,8 +29,24 @@ import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
 
 export default function Home() {
-  
   const projectData = [
+    {
+      title: "StudyNex",
+      desc: "StudyNex is a powerful online platform that combines all the tools needed to run a successful class of school or college",
+      logo: StudyNexLogo,
+      tech: [
+        "Next Js",
+        "Tailwind CSS",
+        "Material UI",
+        "Socket & WebRTC",
+        "Node Js",
+        "Express Js",
+        "Flask",
+        "MongoDB",
+      ],
+      liveLink: "https://study-nex.vercel.app/",
+      gitLink: "https://github.com/COD-23/StudyNex---Frontend",
+    },
     {
       title: "SmartChat",
       desc: "SmartChat is a web based chat application that allows users to authenticate using their Github credentials & chat with other random github users.",
@@ -41,24 +58,24 @@ export default function Home() {
         "Apollo Client",
         "Github OAuth Apps",
       ],
-      liveLink:"https://smart-chat-rho.vercel.app/",
-      gitLink:"https://github.com/Aaditya8C/SmartChat"
+      liveLink: "https://smart-chat-rho.vercel.app/",
+      gitLink: "https://github.com/Aaditya8C/SmartChat",
     },
     {
       title: "TravelKing",
       desc: "Currently a static webpage,TravelKing is the web platform dedicated to the famous tourist spot Alibag. Using this platform tourists can book explore various activities & book stays in Alibag.",
       logo: TkFrontEnd,
-      tech: ["Next Js", "Tailwind CSS", "Framer Motion","AOS"],
-      liveLink:"https://travel-king.vercel.app/",
-      gitLink:"https://github.com/Aaditya8C/TravelKing"
+      tech: ["Next Js", "Tailwind CSS", "Framer Motion", "AOS"],
+      liveLink: "https://travel-king.vercel.app/",
+      gitLink: "https://github.com/Aaditya8C/TravelKing",
     },
     {
       title: "TravelKing Admin",
       desc: "It is the admin panel for TravelKing platform that allows the lodge owners to register their lodge & update,track booking status for individual lodge/hotel.",
       logo: TkAdmin,
       tech: ["Next Js", "Tailwind CSS", "Node Js", "Express Js", "MongoDB"],
-      liveLink:"https://travel-king-admin.vercel.app/",
-      gitLink:"https://github.com/Aaditya8C/TravelKing-Admin"
+      liveLink: "https://travel-king-admin.vercel.app/",
+      gitLink: "https://github.com/Aaditya8C/TravelKing-Admin",
     },
   ];
 
@@ -135,7 +152,7 @@ export default function Home() {
     <div className="grid place-items-center lg:w-[80%] m-auto">
       <div className="grid gap-10 py-5 px-6 lg:w-3/4 text-center">
         {/* Intro */}
-        <Intro/>
+        <Intro />
         <About />
 
         {/* Projects */}
@@ -144,9 +161,8 @@ export default function Home() {
         <SkillSet data={skillSet} />
 
         <Work data={workExperience} />
-
       </div>
-        <Contact/>
+      <Contact />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const ProjectCard = ({ data }) => {
 
   return (
     <div
-      className="rounded-3xl bg-gray-50 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse hover:bg-gray-100 transition duration-200"
+      className="rounded-3xl bg-orange-100 text-violet-950 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse transition-all duration-1000 hover:bg-orange-200 "
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
@@ -23,8 +23,8 @@ const ProjectCard = ({ data }) => {
         </p>
         <Image
           src={data.logo}
-          width={2000}
-          height={2000}
+          width={100}
+          height={100}
           alt="project"
           quality={100}
           className="lg:hidden rounded-t-xl w-[20rem] lg:w-[20rem] h-full
@@ -68,7 +68,7 @@ const ProjectCard = ({ data }) => {
 
       <div
         className="hidden lg:block shadow-2xl 
-        absolute top-16 bottom-16 -right-8 group-odd:right-[initial] group-odd:-left-8 
+        absolute top-32 bottom-10 -right-8 group-odd:right-[initial] group-odd:-left-8 h-fit
         group-hover:scale-105
         group-hover:-translate-x-3
         group-hover:translate-y-3 
@@ -80,11 +80,11 @@ const ProjectCard = ({ data }) => {
       >
         <Image
           src={data.logo}
-          width={2000}
-          height={2000}
+          width={200}
+          height={200}
           alt="project"
           quality={100}
-          className="rounded-t-xl w-[20rem] lg:w-[20rem] h-full
+          className="rounded-t-xl w-[20rem] object-contain 
           "
         />
       </div>
