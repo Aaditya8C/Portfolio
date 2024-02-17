@@ -14,7 +14,7 @@ body{
 } */
 
 body {
-  background: linear-gradient(90deg, #9ef2ffda, #7122f1, #c1a5f8);
+  background: linear-gradient(90deg, #9ecaffda, #7122f1, #c1a5f8);
   background-size: 400% 200%;
   animation: gradientAnimation 10s ease-in-out infinite;
 }
