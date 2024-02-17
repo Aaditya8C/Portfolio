@@ -42,7 +42,7 @@ const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <div className="sticky top-0 z-[999] md:py-6 lg:w-[50%] m-auto">
-      <div className="absolute px-8 md:px-14 py-1 hidden">
+      {/* <div className="absolute px-8 md:px-14 py-1 hidden">
         <div
           className="p-2 rounded-full bg-white cursor-pointer"
           onClick={() => setIsDarkMode(!isDarkMode)}
@@ -53,7 +53,7 @@ const Navbar = () => {
             <PiMoonBold className="text-gray-500" />
           )}
         </div>
-      </div>
+      </div> */}
       <div className="absolute right-6">
         <HiMenuAlt3
           className="h-8 w-8 md:hidden"
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <motion.li
                   key={index}
                   className={classNames(
-                    "grow md:cursor-pointer transition-all duration-300 p-3 relative",
+                    "grow md:cursor-pointer transition-all duration-300 p-3 relative text-center font-semibold",
                     activeSection == item.name
                       ? "text-black"
                       : "text-orange-200"
