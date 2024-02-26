@@ -27,6 +27,7 @@ import Work from "@/components/Work";
 import * as animationData from "../public/Assets/work.json";
 import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
+import { TracingBeam } from "@/components/animateedUi/TracingBeam";
 
 export default function Home() {
   const projectData = [
@@ -149,20 +150,22 @@ export default function Home() {
   ];
 
   return (
-    <div className="grid place-items-center lg:w-[80%] m-auto">
-      <div className="grid gap-10 py-5 px-6 lg:w-3/4 text-center">
-        {/* Intro */}
-        <Intro />
-        <About />
+    <TracingBeam>
+      <div className="grid place-items-center m-auto">
+        <div className="grid gap-10 py-5 px-6 lg:w-3/4 text-center">
+          {/* Intro */}
+          <Intro />
+          <About />
 
-        {/* Projects */}
-        <Projects data={projectData} />
+          {/* Projects */}
+          <Projects data={projectData} />
 
-        <SkillSet data={skillSet} />
+          <SkillSet data={skillSet} />
 
-        <Work data={workExperience} />
+          <Work data={workExperience} />
+        </div>
+        <Contact />
       </div>
-      <Contact />
-    </div>
+    </TracingBeam>
   );
 }

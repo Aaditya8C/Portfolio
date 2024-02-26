@@ -13,6 +13,7 @@ import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 import useDownloader from "react-use-downloader";
 import * as animationData from "../public/Assets/dev.json";
 import Lottie from "react-lottie";
+import { TypewriterEffectSmooth } from "./animateedUi/TypewriterEffect";
 
 const Intro = () => {
   const { setActiveSection } = useActiveSectionContext();
@@ -31,6 +32,16 @@ const Intro = () => {
   useEffect(() => {
     if (inView) setActiveSection("Home");
   }, [inView]);
+
+  const words = [
+    {
+      text: "Hey there!!  ",
+    },
+    {
+      text: "Myself Aaditya.",
+      className: "text-violet-900 dark:text-orange-300",
+    },
+  ];
 
   const defaultOptions = {
     animationData: animationData,
@@ -54,9 +65,10 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="grid place-items-center text-slate-200 "
       >
+        <TypewriterEffectSmooth words={words} />
         <p className="text-xl md:text-2xl line-clamp-6">
-          <b>Hello, I&apos;m Aaditya.</b> I&apos;m a <b>full-stack developer</b>{" "}
-          based in Mumbai. I enjoy building sites & apps.
+          I&apos;m a <b>full-stack developer</b> based in Mumbai. I enjoy
+          building sites & apps.
         </p>
         <div className="flex flex-wrap justify-center  md:flex-row gap-6 py-10">
           <Link href={composeUrl} target="_blank">

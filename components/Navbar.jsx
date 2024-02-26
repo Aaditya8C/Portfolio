@@ -63,12 +63,12 @@ const Navbar = () => {
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        // transition={{duration:.5,type:'spring'}}
+        transition={{ duration: 0.5, type: "tween" }}
         className="md:justify-center z-[999]"
       >
         <div
           className={classNames(
-            " bg-violet-950 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-xl px-6 py-2 transition-all duration-300",
+            " bg-violet-950 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-xl px-6 py-2 transition-all duration-300 ",
             isShow ? "translate-y-0" : "-translate-y-80  md:translate-y-0"
           )}
         >
