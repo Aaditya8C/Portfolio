@@ -13,23 +13,25 @@ const ProjectCard = ({ data }) => {
 
   return (
     <div
-      className="rounded-3xl bg-orange-100 text-violet-950 p-10 gap-20 overflow-hidden relative group flex flex-row items-center odd:flex-row-reverse transition-all duration-1000 hover:bg-orange-200 "
+      className="rounded-3xl bg-orange-100 text-violet-950 p-10 gap-4 overflow-hidden relative group flex flex-col items-center  transition-all duration-1000 hover:bg-orange-200 "
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
-      <div className="grid lg:max-w-[50%] place-content-center place-items-center gap-8 lg:group-odd:ml-[20rem] ">
+      <div className="">
+        <Image
+          src={data.logo}
+          width=""
+          height=""
+          alt="project"
+          quality={100}
+          className="rounded-3xl  w-full h-72 object-contain hover:scale-110 hover:rounded-none  transition duration-300
+          "
+        />
+      </div>
+      <div className="grid lg:max-w-full place-content-center place-items-center gap-4 ">
         <p className="font-semibold text-xl lg:text-2xl text-left">
           {data.title}
         </p>
-        <Image
-          src={data.logo}
-          width={100}
-          height={100}
-          alt="project"
-          quality={100}
-          className="lg:hidden rounded-t-xl w-[20rem] lg:w-[20rem] h-full
-          "
-        />
         <p className="text-lg text-left">{data.desc}</p>
 
         <div className="flex flex-wrap gap-4">
@@ -37,7 +39,7 @@ const ProjectCard = ({ data }) => {
             return (
               <p
                 key={index}
-                className="bg-gray-600 text-white py-1 px-3 text-sm rounded-full shrink-0"
+                className="bg-gray-600 text-white py-1 px-3 text-sm rounded-full shrink-0 "
               >
                 {item}
               </p>
@@ -66,7 +68,7 @@ const ProjectCard = ({ data }) => {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="hidden lg:block shadow-2xl 
         absolute top-32 bottom-10 -right-8 group-odd:right-[initial] group-odd:-left-8 h-fit
         group-hover:scale-105
@@ -80,14 +82,14 @@ const ProjectCard = ({ data }) => {
       >
         <Image
           src={data.logo}
-          width={200}
-          height={200}
+          width={0}
+          height={0}
           alt="project"
           quality={100}
           className="rounded-t-xl w-[20rem] object-contain 
           "
         />
-      </div>
+      </div> */}
     </div>
   );
 };

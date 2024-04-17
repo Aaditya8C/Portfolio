@@ -18,6 +18,8 @@ import laravel from "../public/Assets/laravel.svg";
 import github from "../public/Assets/github.svg";
 import medi from "../public/Assets/medisage.png";
 import study from "../public/Assets/study.png";
+import gdrive from "../public/Assets/gdrive.png";
+import igclone from "../public/Assets/igclone.png";
 
 // link for free svg icons: https://iconduck.com/icons/89383/github
 
@@ -40,3 +42,5 @@ export const LaravelLogo = laravel;
 export const GithubLogo = github;
 export const Medisage = medi;
 export const StudyNexLogo = study;
+export const GdriveLogo = gdrive;
+export const IgCloneLogo = igclone;

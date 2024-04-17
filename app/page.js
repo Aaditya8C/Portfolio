@@ -18,6 +18,8 @@ import {
   GithubLogo,
   Medisage,
   StudyNexLogo,
+  GdriveLogo,
+  IgCloneLogo,
 } from "@/components/imageConstant";
 import { NextLogo } from "@/components/imageConstant";
 import About from "@/components/About";
@@ -31,6 +33,38 @@ import { TracingBeam } from "@/components/animateedUi/TracingBeam";
 
 export default function Home() {
   const projectData = [
+    {
+      title: "GDrive Dapp",
+      desc: "Decentralized platfrom where user can connect to metamask wallet and can store the images on ipfs storage. Also users have the ability to grant and revoke the access to their content to different metamask users.",
+      logo: GdriveLogo,
+      tech: [
+        "Ethers JS",
+        "Next Js",
+        "Typescript",
+        "Tailwind CSS",
+        "Material UI",
+        "Solidity",
+        "Metamask Wallet",
+        "Alchemy",
+      ],
+      liveLink: "https://gdrive-dapp.vercel.app/",
+      gitLink: "https://github.com/Aaditya8C/GDrive-Dapp-Client",
+    },
+    {
+      title: "Instagram Clone",
+      desc: "This is the clone of Instagram's mobile app (work in progress)",
+      logo: IgCloneLogo,
+      tech: [
+        "React Native",
+        "Nativewind",
+        "Typescript",
+        "Yupp",
+        "Formik",
+        "Firebase",
+      ],
+      liveLink: "",
+      gitLink: "https://github.com/Aaditya8C/Instagram_Clone_React_Native",
+    },
     {
       title: "StudyNex",
       desc: "StudyNex is a powerful online platform that combines all the tools needed to run a successful class of school or college",
@@ -150,22 +184,22 @@ export default function Home() {
   ];
 
   return (
-    <TracingBeam>
-      <div className="grid place-items-center m-auto">
-        <div className="grid gap-10 py-5 px-6 lg:w-3/4 text-center">
-          {/* Intro */}
-          <Intro />
-          <About />
+    // <TracingBeam>
+    <div className="grid place-items-center m-auto">
+      <div className="grid gap-10 pt-5 px-6 lg:w-3/4 text-center">
+        {/* Intro */}
+        <Intro />
+        <About />
 
-          {/* Projects */}
-          <Projects data={projectData} />
+        {/* Projects */}
+        <Projects data={projectData} />
 
-          <SkillSet data={skillSet} />
+        <SkillSet data={skillSet} />
 
-          <Work data={workExperience} />
-        </div>
-        <Contact />
+        <Work data={workExperience} />
       </div>
-    </TracingBeam>
+      <Contact />
+    </div>
+    // </TracingBeam>
   );
 }
