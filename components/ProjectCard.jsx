@@ -13,7 +13,8 @@ const ProjectCard = ({ data }) => {
 
   return (
     <div
-      className="rounded-3xl bg-orange-100 text-violet-950 p-10 gap-4 overflow-hidden relative group flex flex-col items-center  transition-all duration-1000 hover:bg-orange-200 "
+      className="ripple-bg rounded-3xl bg-cyan-950 text-white p-10 gap-4 overflow-hidden relative group flex flex-col items-center transition-all duration-500 "
+      // className="rounded-3xl bg-gray-600 text-white p-10 gap-4 overflow-hidden relative group flex flex-col items-center transition-all duration-500 hover:bg-gray-700"
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
@@ -29,17 +30,17 @@ const ProjectCard = ({ data }) => {
         />
       </div>
       <div className="grid lg:max-w-full place-content-center place-items-center gap-4 ">
-        <p className="font-semibold text-xl lg:text-2xl text-left">
+        <p className="font-semibold text-xl lg:text-2xl text-left text-orange-200">
           {data.title}
         </p>
-        <p className="text-lg text-left">{data.desc}</p>
+        <p className="text-lg text-left text-slate-200">{data.desc}</p>
 
         <div className="flex flex-wrap gap-4">
           {data.tech.map((item, index) => {
             return (
               <p
                 key={index}
-                className="bg-gray-600 text-white py-1 px-3 text-sm rounded-full shrink-0 "
+                className="bg-cyan-900 font-semibold text-orange-200 py-2 px-4 text-sm rounded-full shrink-0 "
               >
                 {item}
               </p>

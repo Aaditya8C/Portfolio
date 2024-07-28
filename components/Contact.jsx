@@ -23,7 +23,7 @@ const Contact = () => {
   }, [inView]);
   return (
     <div
-      className="w-fit md:rounded-t-full bg-orange-100 text-violet-950 px-20 md:px-40 py-8 "
+      className="w-fit md:rounded-t-full bg-cyan-950 text-orange-200 px-20 md:px-40 py-8 "
       ref={ref}
       id="Contact"
     >

@@ -20,6 +20,8 @@ import {
   StudyNexLogo,
   GdriveLogo,
   IgCloneLogo,
+  SolidityLogo,
+  EtherLogo,
 } from "@/components/imageConstant";
 import { NextLogo } from "@/components/imageConstant";
 import About from "@/components/About";
@@ -124,7 +126,7 @@ export default function Home() {
       logo: ReactLogo,
     },
     {
-      label: "Tailwind CSS",
+      label: "Tailwind",
       logo: TailwindLogo,
     },
     {
@@ -140,12 +142,20 @@ export default function Home() {
       logo: MongoLogo,
     },
     {
+      label: "React Native",
+      logo: MongoLogo,
+    },
+    {
       label: "MySQL",
       logo: MysqlLogo,
     },
     {
       label: "Laravel",
       logo: LaravelLogo,
+    },
+    {
+      label: "EthersJs",
+      logo: EtherLogo,
     },
     {
       label: "C++",

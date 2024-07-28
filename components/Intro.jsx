@@ -11,7 +11,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 // import {Resume} from "../public/Assets/resume.pdf";
 import useDownloader from "react-use-downloader";
-import * as animationData from "../public/Assets/dev.json";
+import * as animationData from "../public/Assets/dev2.json";
 import Lottie from "react-lottie";
 import { TypewriterEffectSmooth } from "./animateedUi/TypewriterEffect";
 
@@ -25,7 +25,6 @@ const Intro = () => {
   const fileName = "aaditya-resume.pdf";
 
   const downloadResume = () => {
-    console.log(fileUrl);
     download(fileUrl, fileName);
   };
 
@@ -58,7 +57,7 @@ const Intro = () => {
         animate={{ scale: 1, opacity: 1 }}
         className="-z-10"
       >
-        <Lottie options={defaultOptions} width={300} height={300} />
+        <Lottie options={defaultOptions} width={350} height={350} />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

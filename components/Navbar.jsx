@@ -68,7 +68,7 @@ const Navbar = () => {
       >
         <div
           className={classNames(
-            " bg-violet-950 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-xl px-6 py-2 transition-all duration-300 ",
+            " bg-cyan-900 bg-opacity-90 backdrop-blur-sm md:rounded-full shadow-xl px-6 py-2 transition-all duration-300 ",
             isShow ? "translate-y-0" : "-translate-y-80  md:translate-y-0"
           )}
         >

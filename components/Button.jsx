@@ -9,7 +9,7 @@ const Button = ({ invert, children, btnText, clickEvent, className = "" }) => {
         "py-2 px-4 flex justify-center items-center gap-2 shadow-xl rounded-full transition-all duration-200 md:cursor-pointer",
         invert
           ? "bg-white text-black hover:bg-gray-100"
-          : "bg-violet-950 text-orange-200"
+          : "bg-cyan-900 text-orange-200"
       )}
       onClick={clickEvent}
     >

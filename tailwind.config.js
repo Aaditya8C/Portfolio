@@ -12,6 +12,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        waterRipple: {
+          "0%, 100%": {
+            transform: "scale(1)",
+            boxShadow: "0 0 0 0 rgba(0, 0, 0, 0.2)",
+          },
+          "50%": {
+            transform: "scale(1.02)",
+            boxShadow: "0 0 20px 10px rgba(0, 0, 0, 0)",
+          },
+        },
+      },
+      animation: {
+        waterRipple: "waterRipple 2s ease-in-out infinite",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
