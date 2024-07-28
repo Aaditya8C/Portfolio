@@ -11,20 +11,11 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FiArrowRight } from "react-icons/fi";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
-  const { setActiveSection } = useActiveSectionContext();
-  const { ref, inView } = useInView();
-
-  useEffect(() => {
-    if (inView) setActiveSection("Experience");
-  }, [inView]);
   return (
     <div
       className="w-fit md:rounded-t-full bg-cyan-950 text-orange-200 px-20 md:px-40 py-8 "
-      ref={ref}
       id="Contact"
     >
       <p className="text-center text-lg">

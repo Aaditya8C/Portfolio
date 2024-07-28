@@ -6,7 +6,9 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 
 const Work = ({ data }) => {
   const { setActiveSection } = useActiveSectionContext();
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.7,
+  });
 
   useEffect(() => {
     if (inView) setActiveSection("Experience");

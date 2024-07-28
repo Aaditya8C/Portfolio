@@ -12,8 +12,11 @@ body{
   background-size: 200% 100% 1%;
   transition: background-position 0.5s;
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
+  overflow-x: hidden;
   background: linear-gradient(90deg, #0d131ada, #000000, #202020);
   background-size: 400% 200%;
   animation: gradientAnimation 10s ease-in-out infinite;

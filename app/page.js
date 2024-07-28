@@ -53,21 +53,6 @@ export default function Home() {
       gitLink: "https://github.com/Aaditya8C/GDrive-Dapp-Client",
     },
     {
-      title: "Instagram Clone",
-      desc: "This is the clone of Instagram's mobile app (work in progress)",
-      logo: IgCloneLogo,
-      tech: [
-        "React Native",
-        "Nativewind",
-        "Typescript",
-        "Yupp",
-        "Formik",
-        "Firebase",
-      ],
-      liveLink: "",
-      gitLink: "https://github.com/Aaditya8C/Instagram_Clone_React_Native",
-    },
-    {
       title: "StudyNex",
       desc: "StudyNex is a powerful online platform that combines all the tools needed to run a successful class of school or college",
       logo: StudyNexLogo,
@@ -113,6 +98,21 @@ export default function Home() {
       tech: ["Next Js", "Tailwind CSS", "Node Js", "Express Js", "MongoDB"],
       liveLink: "https://travel-king-admin.vercel.app/",
       gitLink: "https://github.com/Aaditya8C/TravelKing-Admin",
+    },
+    {
+      title: "Instagram Clone",
+      desc: "This is the clone of Instagram's mobile app (work in progress)",
+      logo: IgCloneLogo,
+      tech: [
+        "React Native",
+        "Nativewind",
+        "Typescript",
+        "Yupp",
+        "Formik",
+        "Firebase",
+      ],
+      liveLink: "",
+      gitLink: "https://github.com/Aaditya8C/Instagram_Clone_React_Native",
     },
   ];
 

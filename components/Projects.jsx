@@ -5,11 +5,13 @@ import { useInView } from "react-intersection-observer";
 
 const Projects = ({ data }) => {
   const { setActiveSection } = useActiveSectionContext();
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
 
   useEffect(() => {
     if (inView) setActiveSection("Projects");
-  }, [inView]);
+  }, [inView, setActiveSection]);
 
   return (
     <div

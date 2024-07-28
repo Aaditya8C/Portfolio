@@ -17,7 +17,10 @@ import { TypewriterEffectSmooth } from "./animateedUi/TypewriterEffect";
 
 const Intro = () => {
   const { setActiveSection } = useActiveSectionContext();
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
   const { size, elapsed, percentage, download, cancel, error, isInProgress } =
     useDownloader();
   // const [fileUrl,setFileUrl] = "/public/resume.pdf";
@@ -73,11 +76,6 @@ const Intro = () => {
           <Link href={composeUrl} target="_blank">
             <Button btnText="Contact me here">
               <FiArrowRight className="h-5 w-5" />
-            </Button>
-          </Link>
-          <Link href={linkedInProfile}>
-            <Button invert>
-              <FaLinkedin className="h-7 w-5" />
             </Button>
           </Link>
           <Button btnText="Download CV" invert clickEvent={downloadResume}>

@@ -13,19 +13,19 @@ const ProjectCard = ({ data }) => {
 
   return (
     <div
-      className="ripple-bg rounded-3xl bg-cyan-950 text-white p-10 gap-4 overflow-hidden relative group flex flex-col items-center transition-all duration-500 "
+      className="ripple-bg rounded-3xl bg-cyan-950 text-white p-10 gap-4 overflow-hidden relative group flex flex-col items-center  transition-all duration-500 "
       // className="rounded-3xl bg-gray-600 text-white p-10 gap-4 overflow-hidden relative group flex flex-col items-center transition-all duration-500 hover:bg-gray-700"
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
-      <div className="">
+      <div className="flex justify-center">
         <Image
           src={data.logo}
           width=""
           height=""
           alt="project"
           quality={100}
-          className="rounded-3xl  w-full h-72 object-contain hover:scale-110 hover:rounded-none  transition duration-300
+          className="rounded-3xl  w-[85%] h-64 object-contain hover:scale-110 hover:rounded-none  transition duration-300
           "
         />
       </div>
