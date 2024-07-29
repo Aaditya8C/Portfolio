@@ -17,7 +17,10 @@ const SkillSet = ({ data }) => {
       </p>
       <div className="mt-10 grid gap-y-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-content-center place-items-center">
         {data.map((item, index) => {
-          return <Skill data={item} key={index} index={index} />;
+          const ItemLogo = item.logo;
+          return (
+            <Skill data={item} key={index} index={index} ItemLogo={ItemLogo} />
+          );
         })}
       </div>
     </div>

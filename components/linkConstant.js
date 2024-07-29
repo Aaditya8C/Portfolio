@@ -6,3 +6,4 @@ export const composeUrl =
 
 export const instaProfile = "https://www.instagram.com/thenameisaadityapadte/";
 export const xProfile = "https://twitter.com/Aaditya_Padte";
+export const leetProfile = "https://leetcode.com/u/DEVX008/";

@@ -31,7 +31,21 @@ import Work from "@/components/Work";
 import * as animationData from "../public/Assets/work.json";
 import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
-import { TracingBeam } from "@/components/animateedUi/TracingBeam";
+import { RiReactjsLine, RiJavaFill } from "react-icons/ri";
+import {
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiLaravel,
+  SiEthers,
+  SiGithub,
+  SiPython,
+} from "react-icons/si";
+import { TbBrandReactNative, TbBrandMysql, TbBrandCpp } from "react-icons/tb";
+import { BiLogoJava } from "react-icons/bi";
+import { IoMdCloudy } from "react-icons/io";
 
 export default function Home() {
   const projectData = [
@@ -119,59 +133,59 @@ export default function Home() {
   const skillSet = [
     {
       label: "Next.js",
-      logo: NextLogo,
+      logo: SiNextdotjs,
     },
     {
       label: "React Js",
-      logo: ReactLogo,
+      logo: RiReactjsLine,
     },
     {
       label: "Tailwind",
-      logo: TailwindLogo,
+      logo: SiTailwindcss,
     },
     {
       label: "Node.js",
-      logo: NodeLogo,
+      logo: SiNodedotjs,
     },
     {
       label: "Express Js",
-      logo: ExpressLogo,
+      logo: SiExpress,
     },
     {
       label: "MongoDB",
-      logo: MongoLogo,
+      logo: SiMongodb,
     },
     {
       label: "React Native",
-      logo: MongoLogo,
+      logo: TbBrandReactNative,
     },
     {
       label: "MySQL",
-      logo: MysqlLogo,
+      logo: TbBrandMysql,
     },
     {
       label: "Laravel",
-      logo: LaravelLogo,
+      logo: SiLaravel,
     },
     {
       label: "EthersJs",
-      logo: EtherLogo,
+      logo: IoMdCloudy,
     },
     {
       label: "C++",
-      logo: CppLogo,
+      logo: TbBrandCpp,
     },
     {
       label: "Java",
-      logo: JavaLogo,
+      logo: BiLogoJava,
     },
     {
       label: "Python",
-      logo: PythonLogo,
+      logo: SiPython,
     },
     {
       label: "Github",
-      logo: GithubLogo,
+      logo: SiGithub,
     },
   ];
 

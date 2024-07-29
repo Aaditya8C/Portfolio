@@ -5,17 +5,19 @@ import { FaLinkedin } from "react-icons/fa";
 import {
   composeUrl,
   instaProfile,
+  leetProfile,
   linkedInProfile,
   xProfile,
 } from "./linkConstant";
 import { AiFillInstagram } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FiArrowRight } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
   return (
     <div
-      className="w-fit md:rounded-t-full bg-cyan-950 text-orange-200 px-20 md:px-40 py-8 "
+      className=" w-fit md:rounded-t-full bg-cyan-950 text-orange-200 px-20 md:px-40 py-8 "
       id="Contact"
     >
       <p className="text-center text-lg">
@@ -40,6 +42,11 @@ const Contact = () => {
         <Link href={xProfile}>
           <Button invert>
             <RiTwitterXLine className="h-7 w-5" />
+          </Button>
+        </Link>
+        <Link href={leetProfile}>
+          <Button invert>
+            <SiLeetcode className="h-7 w-5" />
           </Button>
         </Link>
       </div>

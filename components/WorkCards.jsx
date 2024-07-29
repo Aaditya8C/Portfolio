@@ -10,7 +10,7 @@ const WorkCards = ({ data }) => {
   }, []);
   return (
     <div
-      className="bg-cyan-950 text-violet-950 p-10 rounded-tl-3xl rounded-br-3xl shadow- grid gap-6"
+      className="ripple-bg bg-cyan-950 text-violet-950 p-10 rounded-tl-3xl rounded-br-3xl shadow- grid gap-6"
       data-aos="zoom-in-up"
       data-aos-duration="1000"
     >
