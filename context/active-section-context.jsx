@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import React, { createContext, useContext, useState } from "react";
 
 const ActiveSectionContext = createContext(null);

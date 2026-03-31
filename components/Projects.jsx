@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { useActiveSectionContext } from "@/context/active-section-context";

@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import Skill from "./Skill";
 import { useActiveSectionContext } from "@/context/active-section-context";

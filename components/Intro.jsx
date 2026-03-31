@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ import { composeUrl, gitHubProfile, linkedInProfile } from "./linkConstant";
 // import {Resume} from "../public/Assets/resume.pdf";
 import useDownloader from "react-use-downloader";
 import * as animationData from "../public/Assets/dev2.json";
-import Lottie from "react-lottie";
+import LottiePlayer from "./LottiePlayer";
 import { TypewriterEffectSmooth } from "./animateedUi/TypewriterEffect";
 
 const Intro = () => {
@@ -60,7 +61,7 @@ const Intro = () => {
         animate={{ scale: 1, opacity: 1 }}
         className="-z-10"
       >
-        <Lottie options={defaultOptions} width={350} height={350} />
+        <LottiePlayer animationData={animationData} width={350} height={350} />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

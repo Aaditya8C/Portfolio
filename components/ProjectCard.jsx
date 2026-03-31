@@ -19,15 +19,20 @@ const ProjectCard = ({ data }) => {
       data-aos-duration="1500"
     >
       <div className="flex justify-center">
-        <Image
-          src={data.logo}
-          width=""
-          height=""
-          alt="project"
-          quality={100}
-          className="rounded-3xl  w-[85%] h-64 object-contain hover:scale-110 hover:rounded-none  transition duration-300
-          "
-        />
+        {data.logo ? (
+          <Image
+            src={data.logo}
+            width={300}
+            height={200}
+            alt="project"
+            quality={100}
+            className="rounded-3xl w-[85%] h-64 object-contain hover:scale-110 hover:rounded-none transition duration-300"
+          />
+        ) : (
+          <div className="flex h-64 w-[85%] items-center justify-center rounded-3xl bg-slate-800 text-slate-300">
+            No image available
+          </div>
+        )}
       </div>
       <div className="grid lg:max-w-full place-content-center place-items-center gap-4 ">
         <p className="font-semibold text-xl lg:text-2xl text-left text-orange-200">

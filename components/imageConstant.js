@@ -22,6 +22,8 @@ import gdrive from "../public/Assets/gdrive.png";
 import igclone from "../public/Assets/igclone.png";
 import ether from "../public/Assets/ethers.svg";
 import solidity from "../public/Assets/solidity.svg";
+import cpclub from "../public/Assets/cp-club.png";
+import nftauction from "../public/Assets/nft-auction.png";
 
 // link for free svg icons: https://iconduck.com/icons/89383/github
 
@@ -48,3 +50,5 @@ export const Medisage = medi;
 export const StudyNexLogo = study;
 export const GdriveLogo = gdrive;
 export const IgCloneLogo = igclone;
+export const CpClubLogo = cpclub;
+export const NftAuctionLogo = nftauction;

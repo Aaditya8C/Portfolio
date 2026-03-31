@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import Lottie from "react-lottie";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import LottiePlayer from "./LottiePlayer";
 
 const WorkCards = ({ data }) => {
   useEffect(() => {
@@ -16,7 +17,11 @@ const WorkCards = ({ data }) => {
     >
       <div className="flex flex-col justify-center items-center gap-10">
         {/* <Image src={data.logo} width={200} height={200} /> */}
-        <Lottie options={data.options} width={200} height={200} />
+        <LottiePlayer
+          animationData={data.options?.animationData}
+          width={200}
+          height={200}
+        />
         <p className="font-semibold text-xl md:text-2xl text-center text-orange-200">
           {data.org}
         </p>
